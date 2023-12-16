@@ -1,0 +1,17 @@
+.maincont {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.leftcont {
+  display: flex;
+  gap:20px;
+  padding:50px;
+}
+.columnimages {
+  display: flex;
+  flex-direction: column;
+  gap:15px
+}
+.sideimages {
+  /* margin-bottom: 15px; */
+}
