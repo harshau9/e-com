@@ -9,13 +9,18 @@ import {
   IoHeartOutline,
   IoCartOutline,
 } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
+  const navigateToHome = () => {
+    navigate("/");
+  };
   return (
     <div className="main_menu">
       <div className="menu_logo">
-        <GiHamburgerMenu style={{ color: "gray" }} size={22} />
-        <img src={Logo} width={"30px"} />
+        <GiHamburgerMenu style={{ color: "gray" }} size={22} onClick={navigateToHome}/>
+        <img src={Logo} width={"30px"} onClick={navigateToHome}/>
       </div>
       <div className="menu_items">
         <p>Catalog</p>

@@ -1,6 +1,6 @@
 .productCard{
   width: 240px;
-  height: 380px;
+  height: 395px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 4px;
   padding: 10px;
@@ -67,4 +67,5 @@ border-radius: 3px;
   color: #fff;
   padding: 10px 84px;
   border-radius: 5px;
+  border: none;
 }

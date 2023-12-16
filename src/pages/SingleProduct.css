@@ -15,3 +15,19 @@
 .sideimages {
   /* margin-bottom: 15px; */
 }
+.rightcont {
+  margin-left: 100px;
+  margin-right: 40px;
+  padding: 45px 20px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.buttonstyle {
+  width:140px;
+  padding:10px 20px;
+  background-color: teal;
+  color:#fff;
+  border: none;
+  border-radius: 4px;
+}

@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa6";
 import { productImage } from "../../constants/images";
 import styles from "./Product.module.css";
+import { useNavigate } from "react-router-dom";
 
 function ProductCard({ index, item }) {
   const [liked, setLiked] = useState(false);
   const [quantity, setQuantity] = useState(1);
+  const navigate = useNavigate();
 
   const handleLikeToggle = () => {
     setLiked(!liked);
@@ -20,6 +22,9 @@ function ProductCard({ index, item }) {
       setQuantity(quantity - 1);
     }
   };
+  const handleProductClick = () => {
+    navigate("/product", { state: { item } });
+  };
   return (
     <div key={index} className={styles.productCard}>
       <div
@@ -28,6 +33,7 @@ function ProductCard({ index, item }) {
           alignItems: "center",
           justifyContent: "center",
         }}
+        onClick={handleProductClick}
       >
         <img
           height={"120px"}
@@ -36,7 +42,7 @@ function ProductCard({ index, item }) {
           alt={item.name}
         />
       </div>
-      <div style={{ height: "30px" }}>
+      <div style={{ height: "40px" }} onClick={handleProductClick}>
         <h5>{item.name}</h5>
       </div>
       <div>
@@ -50,8 +56,8 @@ function ProductCard({ index, item }) {
       </div>
       <div className={styles.details}>
         <p style={{ color: "teal" }}>Saving % 4.60</p>
-        <p>Supplier : Supplier</p>
-        <p>Delivery By: 1-01-2024</p>
+        <p>Supplier : Wayfair</p>
+        <p>Delivery By: 09-12-2023</p>
       </div>
       <div
         style={{

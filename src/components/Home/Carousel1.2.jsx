@@ -43,7 +43,7 @@ function Carousel2() {
             color={"#fff"}
             loading={loading}
             cssOverride={override}
-            size={80}
+            size={30}
             aria-label="Loading Spinner"
             data-testid="loader"
           />
