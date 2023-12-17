@@ -3,6 +3,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .main-container-all-products {
+  margin-left: 20px;
   display: grid;
   grid-template-columns: repeat(5,1fr);
   gap:20

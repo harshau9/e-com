@@ -38,7 +38,7 @@ function ProductCard({ index, item }) {
         <img
           height={"120px"}
           width={"180px"}
-          src={item.url ? productImage : item.url}
+          src={item.image_url ? item.image_url : productImage }
           alt={item.name}
         />
       </div>

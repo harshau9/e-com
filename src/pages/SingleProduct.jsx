@@ -43,7 +43,7 @@ function SingleProduct() {
                 )}
               </div>
               <img
-                src={prodImage}
+                src={item.image_url? item.image_url : prodImage}
                 // alt={IoTerminal.name}
                 className="imagestyles"
                 width={"420px"}
